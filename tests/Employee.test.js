@@ -1,10 +1,14 @@
-
-
-// const { it } = require('node:test');
 const Employee = require('../lib/employee') 
 // () => {}
+describe("Employee", () => {
 
 // name
+it("should return the name was used in the constructor", () => {
+  const testValue = "Bob"
+  const obj = new Employee(testValue, 1, "blah@email.com");
+
+    expect(obj.name).toBe(testValue);
+});
 
 // id
 
@@ -19,7 +23,6 @@ const Employee = require('../lib/employee')
 // getRole()—returns 'Employee'
 
 
-describe("Employee", () => {
     describe("Initialization", () => {
 it("should return an object that contains a name property", () => {
     const obj = new Employee();

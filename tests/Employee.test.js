@@ -3,7 +3,7 @@ const Employee = require('../lib/employee')
 describe("Employee", () => {
 
 // name
-it("should return the name was used in the constructor", () => {
+it("should return the name that was used in the constructor", () => {
   const testValue = "Bob"
   const obj = new Employee(testValue, 1, "blah@email.com");
 

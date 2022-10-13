@@ -57,8 +57,7 @@ const prompts = () => {
       switch (data.type) {
         case "Engineer":
         createEngineer();
-          // employees.push(engineer);
-          // console.log("Engineer created.")
+        
       
           break;
 
@@ -66,14 +65,13 @@ const prompts = () => {
           createIntern();
           break;
         default: 
-        // console.log(employees);
-        // console.log(employees[0]);
+    
         const something = generateHTML(employees);
         writeToFile("index.html", something);  
-        // generateHTML(employees);
+    
 
       }
-      // console.log(employees);
+  
     });
 };
 
@@ -147,7 +145,7 @@ const createIntern = () => {
     );
     employees.push(intern);
     console.log("Intern created.")
-    console.log(employees.school)
+ 
     prompts();
   }
   )}
@@ -183,9 +181,8 @@ const generateHTML = (employees) => {
      <div class="row">
         ${createEmployeeCards(employees)} 
         ${closeHTML()}`
-    // for (let i = 0; i < employees.length; i++) {
+}
 
-    }
 // for loop for each one of employees, create a card
 
 const createEmployeeCards = (employees) => {

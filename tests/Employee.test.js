@@ -10,19 +10,6 @@ it("should return the name that was used in the constructor", () => {
     expect(obj.name).toBe(testValue);
 });
 
-// id
-
-// email
-
-// getName()
-
-// getId()
-
-// getEmail()
-
-// getRole()—returns 'Employee'
-
-
     describe("Initialization", () => {
 it("should return an object that contains a name property", () => {
     const obj = new Employee();
